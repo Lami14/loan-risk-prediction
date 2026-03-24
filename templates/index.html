@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Risk Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Risk Prediction System</h1>
+        <form id="loanForm">
+            <label>Income:</label>
+            <input type="number" id="income" required><br>
+            
+            <label>Credit Score:</label>
+            <input type="number" id="credit_score" required><br>
+            
+            <label>Loan Amount:</label>
+            <input type="number" id="loan_amount" required><br>
+            
+            <label>Employment Years:</label>
+            <input type="number" id="employment_years" required><br>
+            
+            <label>Debt to Income Ratio:</label>
+            <input type="number" step="0.01" id="debt_to_income" required><br>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
